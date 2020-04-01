@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Cadastro de Imóvel</title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Cadastro de Imóvel</h1>
+        <form action="">
+            <div class="info-geral">
+                <caption>Informações Gerais:</caption>
+                <label for="imoveis">Tipo de Imóveil:</label>
+                <select name="imoveis" id="imoveis">
+                    <option>Casa</option>
+                    <option>Apartamento</option>
+                </select>
+                <label for="data-construção">Data de Construção:</label>
+                <input name="data-construção" type="date">
+                <input type="radio" name="tipo-imovél" id="novo" value="novo">Imóvel Novo
+                <input type="radio" name="tipo-imovél" id="usado" value="usado">Imóvel Usado
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco">
+                <label for="descricao">Descrição:</label>
+                <textarea type="text" name="descricao"></textarea>
+            </div>
+            <div class="checkbox-group">
+                <caption>Outras Características:</caption>
+                <input type="checkbox" name="caracteristicas" id="psicina" value="psicina">Psicina
+                <input type="checkbox" name="caracteristicas" id="churrasqueira" value="churrasqueira">Churrasqueira
+                <input type="checkbox" name="caracteristicas" id="aquecedor" value="aquecedor">Aquecedor Solar
+                <input type="checkbox" name="caracteristicas" id="lavabo" value="lavabo">Lavabo
+                <input type="checkbox" name="caracteristicas" id="armarios" value="armarios">Armários
+                <input type="checkbox" name="caracteristicas" id="elevador" value="elevador">Elevador
+            </div>
+            <span>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>

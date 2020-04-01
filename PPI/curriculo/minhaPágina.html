@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            width: 70%;
+        }
+
+        div {
+            padding: 20px;
+        }
+
+        div>h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+        }
+
+        .foto {
+            width: 200px;
+            height: 200px;
+            border: solid 3px black;
+        }
+
+        .foto+p {
+            display: inline;
+            margin-left: 30px;
+            font-size: 1.4em;
+
+        }
+
+        li {
+            font-size: 1.2em;
+        }
+
+        li p {
+            margin: 0;
+        }
+
+        .outros {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        tr img {
+            border: solid 2px black;
+            height: 200px;
+            width: 200px;
+        }
+
+        iframe {
+            align-self: center;
+            width: 50%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div style="background-color: #7fffd450">
+            <h1>Nome e foto</h1>
+            <img class="foto" src="images/foto.png" alt="minha foto">
+            <p>Breno Henrique de Oliveira Ferreira</p>
+        </div>
+        <hr>
+        <div style="background-color: #a9a9a930">
+            <h1>Dados pessoais</h1>
+            <ul>
+                <li><strong>E-mail</strong>: <a href="mailto:breno.ferreira@ufu.br">breno.ferreira@ufu.br</a></li>
+                <li><strong>Telefone</strong>: 34 - 992472165</li>
+                <li><strong>Endereço</strong>: Rua Izaú Rangel de Mendonça, Nº 70</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/betteradcwins?tab=repositories">Meu
+                        repositório</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div style="background-color: #ffe4c430">
+            <h1>Formação Acadêmica</h1>
+            <ol>
+                <li>
+                    <p>Cursando Bacharelado em Sistemas de Informação</p>
+                    <p>Universidade Federal de Uberlândia - UFU</p>
+                    <p>Período atual: 4º</p>
+                </li>
+            </ol>
+        </div>
+        <hr>
+        <div style="background-color: #00ffff30">
+            <h1>Experiência Profissional</h1>
+            <ul>
+                <li>
+                    <p>Monitor na disciplina de <em>Estruturas de Dados I</em> - 2019-2</p>
+                </li>
+                <li>
+                    <p>Integrante do <em>PET-SI</em></p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div style="background-color: #ff7f5030">
+            <h1>Outros</h1>
+            <div class="outros">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><img src="images/js.png" alt=""></td>
+                            <td><img src="images/html.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/css.png" alt=""></td>
+                            <td><img src="images/php.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <iframe src="https://www.youtube.com/embed/hwP7WQkmECE" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
